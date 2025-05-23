@@ -1,0 +1,67 @@
+2025-05-23 16:21:25,581 - INFO - File organization completed.
+2025-05-23 17:13:15,908 - ERROR - An error occured at data.csv: module 'ntpath' has no attribute 'jooin'
+Traceback (most recent call last):
+  File "c:\Users\patap\OneDrive\Desktop\Programmieren\Projekte\Privat\file-organizer\file_organizer.py", line 68, in organize_files
+    item_path = os.path.jooin(source_folder, item)
+                ^^^^^^^^^^^^^
+AttributeError: module 'ntpath' has no attribute 'jooin'. Did you mean: 'join'?
+2025-05-23 17:13:45,772 - INFO - Moved: data.csv to C:\Users\patap\test_folder\Spreadsheets\data.csv
+2025-05-23 17:13:45,773 - INFO - Moved: desktop.ini to C:\Users\patap\test_folder\Others\desktop.ini
+2025-05-23 17:13:45,773 - INFO - Moved: document.pdf to C:\Users\patap\test_folder\PDFs\document.pdf
+2025-05-23 17:13:45,774 - INFO - Moved: image.jpg to C:\Users\patap\test_folder\Images\image.jpg
+2025-05-23 17:13:45,774 - INFO - Moved: notes.txt to C:\Users\patap\test_folder\Documents\notes.txt
+2025-05-23 17:13:45,774 - INFO - File organization completed.
+2025-05-23 17:43:12,180 - INFO - Moved: test.txt to C:\Users\patap\test_folder\Documents\test.txt
+2025-05-23 17:43:12,180 - INFO - File organization completed.
+2025-05-23 17:43:54,428 - INFO - Moved: Test.pdf to C:\Users\patap\test_folder\PDFs\Test.pdf
+2025-05-23 17:43:54,428 - INFO - File organization completed.
+2025-05-23 17:44:02,913 - INFO - Moved: Spreadsheets to C:\Users\patap\test_folder\Others\Spreadsheets
+2025-05-23 17:44:02,913 - INFO - File organization completed.
+2025-05-23 17:44:12,851 - INFO - Moved: PDFs to C:\Users\patap\test_folder\Others\PDFs
+2025-05-23 17:44:12,852 - INFO - File organization completed.
+2025-05-23 17:44:19,704 - ERROR - An error occured at Others: Cannot move a directory 'C:\Users\patap\test_folder\Others' into itself 'C:\Users\patap\test_folder\Others\Others'.
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 847, in move
+    os.rename(src, real_dst)
+OSError: [WinError 87] Falscher Parameter: 'C:\\Users\\patap\\test_folder\\Others' -> 'C:\\Users\\patap\\test_folder\\Others\\Others'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\patap\OneDrive\Desktop\Programmieren\Projekte\Privat\file-organizer\file_organizer.py", line 83, in organize_files
+    shutil.move(entry.path, target_path)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 855, in move
+    raise Error("Cannot move a directory '%s' into itself"
+shutil.Error: Cannot move a directory 'C:\Users\patap\test_folder\Others' into itself 'C:\Users\patap\test_folder\Others\Others'.
+2025-05-23 17:45:07,213 - ERROR - An error occured at Others: Cannot move a directory 'C:\Users\patap\test_folder\Others' into itself 'C:\Users\patap\test_folder\Others\Others'.
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 847, in move
+    os.rename(src, real_dst)
+OSError: [WinError 87] Falscher Parameter: 'C:\\Users\\patap\\test_folder\\Others' -> 'C:\\Users\\patap\\test_folder\\Others\\Others'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\patap\OneDrive\Desktop\Programmieren\Projekte\Privat\file-organizer\file_organizer.py", line 83, in organize_files
+    shutil.move(entry.path, target_path)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 855, in move
+    raise Error("Cannot move a directory '%s' into itself"
+shutil.Error: Cannot move a directory 'C:\Users\patap\test_folder\Others' into itself 'C:\Users\patap\test_folder\Others\Others'.
+2025-05-23 17:51:56,244 - INFO - Moved: 123asfgdghAAAA.txt to C:\Users\patap\test_folder\Documents\123asfgdghAAAA.txt
+2025-05-23 17:51:56,245 - INFO - Moved: data.csv to C:\Users\patap\test_folder\Spreadsheets\data.csv
+2025-05-23 17:51:56,246 - INFO - Moved: document.pdf to C:\Users\patap\test_folder\PDFs\document.pdf
+2025-05-23 17:51:56,246 - INFO - Moved: fuck_fuck.txt to C:\Users\patap\test_folder\Documents\fuck_fuck.txt
+2025-05-23 17:51:56,247 - INFO - Moved: image.jpg to C:\Users\patap\test_folder\Images\image.jpg
+2025-05-23 17:51:56,247 - INFO - Moved: notes.txt to C:\Users\patap\test_folder\Documents\notes.txt
+2025-05-23 17:51:56,248 - INFO - Moved: Test.pdf to C:\Users\patap\test_folder\PDFs\Test.pdf
+2025-05-23 17:51:56,248 - INFO - Moved: test.txt to C:\Users\patap\test_folder\Documents\test.txt
+2025-05-23 17:51:56,248 - INFO - File organization completed.
+2025-05-23 18:03:32,885 - INFO - Moved: 123asfgdghAAAA.txt to C:\Users\patap\test_folder\Documents\123asfgdghAAAA.txt
+2025-05-23 18:03:32,886 - INFO - Moved: data.csv to C:\Users\patap\test_folder\Spreadsheets\data.csv
+2025-05-23 18:03:32,887 - INFO - Moved: document.pdf to C:\Users\patap\test_folder\PDFs\document.pdf
+2025-05-23 18:03:32,887 - INFO - Moved: fuck_fuck.txt to C:\Users\patap\test_folder\Documents\fuck_fuck.txt
+2025-05-23 18:03:32,887 - INFO - Moved: image.jpg to C:\Users\patap\test_folder\Images\image.jpg
+2025-05-23 18:03:32,888 - INFO - Moved: notes.txt to C:\Users\patap\test_folder\Documents\notes.txt
+2025-05-23 18:03:32,888 - INFO - Moved: Test.pdf to C:\Users\patap\test_folder\PDFs\Test.pdf
+2025-05-23 18:03:32,889 - INFO - Moved: test.txt to C:\Users\patap\test_folder\Documents\test.txt
+2025-05-23 18:03:32,889 - INFO - File organization completed.
